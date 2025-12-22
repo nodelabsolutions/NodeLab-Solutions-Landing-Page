@@ -13,6 +13,7 @@ body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue"
 .logo{font-weight:700;color:var(--accent)}
 .main-nav a{margin-left:20px;text-decoration:none;color:var(--text);font-weight:600}
 .main-nav a:hover{color:var(--accent)}
+.main-nav{display:flex;align-items:center;gap:10px}
 .hero{background:linear-gradient(135deg, rgba(10,59,102,0.04), rgba(14,70,120,0.02));padding:80px 0}
 .hero-inner{text-align:center;padding:60px 20px}
 .hero-text{font-size:clamp(20px,3.6vw,36px);line-height:1.2;margin:0 0 24px;opacity:0;transform:translateY(10px);animation:fadeInUp 800ms ease forwards}
@@ -37,16 +38,20 @@ body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue"
 
 .implementation{padding:36px 0}
 .timeline{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.timeline .step{background:#fff;padding:14px 18px;border-radius:8px;box-shadow:0 6px 20px rgba(15,30,45,0.04)}
+.timeline .step{background:#fff;padding:20px 18px;border-radius:8px;box-shadow:0 6px 20px rgba(15,30,45,0.04)}
 .timeline .arrow{color:var(--muted);font-weight:700}
 
 .contact{padding:36px 0}
-.contact-inner{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start}
+.contact-inner{display: grid;
+  grid-template-columns: 1fr; /* solo una columna */
+  gap: 28px; /* espacio entre título y formulario */
+  align-items: start;}
 .contact-form{display:flex;flex-direction:column;gap:12px;background:#fff;padding:20px;border-radius:10px;box-shadow:0 6px 20px rgba(15,30,45,0.04)}
 .contact-form label{display:flex;flex-direction:column;font-weight:600;color:var(--muted)}
 .contact-form input,.contact-form textarea{margin-top:8px;padding:10px;border:1px solid #e6eef6;border-radius:6px}
-.fixed-cta{position:fixed;right:20px;bottom:20px;background:var(--accent);color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 10px 30px rgba(10,59,102,0.18)}
-.site-footer{padding:28px 0;text-align:center;color:var(--muted)}n
+.fixed-cta{position:fixed;right:20px;bottom:20px;background:var(--accent);color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 10px 30px rgba(10,59,102,0.18);}
+
+.site-footer{padding:28px 0;text-align:center;color:var(--muted)}
 
 /* Animations */
 @keyframes fadeInUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
