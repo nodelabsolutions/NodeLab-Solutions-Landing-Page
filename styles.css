@@ -1,0 +1,67 @@
+:root{
+  --bg-start: #f7fbff;
+  --bg-end: #eef5fa;
+  --accent: #0a3b66; /* monocromo principal */
+  --text: #0b2030;
+  --muted: #6b7a86;
+}
+*{box-sizing:border-box}
+body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--text); background:linear-gradient(180deg,var(--bg-start),var(--bg-end));}
+.container{max-width:1100px;margin:0 auto;padding:48px 20px;}
+.site-header{background:transparent;position:sticky;top:0;z-index:10;padding:12px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;color:var(--accent)}
+.main-nav a{margin-left:20px;text-decoration:none;color:var(--text);font-weight:600}
+.main-nav a:hover{color:var(--accent)}
+.hero{background:linear-gradient(135deg, rgba(10,59,102,0.04), rgba(14,70,120,0.02));padding:80px 0}
+.hero-inner{text-align:center;padding:60px 20px}
+.hero-text{font-size:clamp(20px,3.6vw,36px);line-height:1.2;margin:0 0 24px;opacity:0;transform:translateY(10px);animation:fadeInUp 800ms ease forwards}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;text-decoration:none;background:#fff;border:1px solid rgba(10,59,102,0.08);color:var(--accent);font-weight:700;cursor:pointer}
+.btn.primary{background:var(--accent);color:#fff;border:none;box-shadow:0 6px 18px rgba(10,59,102,0.08);transition:transform 180ms ease,box-shadow 180ms ease}
+.btn.primary:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(10,59,102,0.12)}
+.btn.large{padding:16px 28px;font-size:1.05rem}
+.section-title{font-size:1.6rem;margin:24px 0 18px}
+.services{padding:40px 0}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;justify-items:center}
+.card{background:#fff;border-radius:10px;padding:28px;box-shadow:0 6px 20px rgba(15,30,45,0.04);width:100%;max-width:520px;display:flex;flex-direction:column;align-items:flex-start;gap:12px;opacity:0;transform:translateY(12px);transition:transform 300ms ease,box-shadow 200ms ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(10,59,102,0.06)}
+.card .icon{color:var(--accent)}
+.card h3{margin:0;font-size:1.05rem}
+.card p{margin:0;color:var(--muted)}
+.card .link{margin-top:auto;color:var(--accent);font-weight:700;text-decoration:none}
+
+.why{padding:36px 0}
+.why-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.why-item{display:flex;gap:12px;align-items:flex-start;padding:12px}
+.why-item .icon{color:var(--accent)}
+
+.implementation{padding:36px 0}
+.timeline{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.timeline .step{background:#fff;padding:14px 18px;border-radius:8px;box-shadow:0 6px 20px rgba(15,30,45,0.04)}
+.timeline .arrow{color:var(--muted);font-weight:700}
+
+.contact{padding:36px 0}
+.contact-inner{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start}
+.contact-form{display:flex;flex-direction:column;gap:12px;background:#fff;padding:20px;border-radius:10px;box-shadow:0 6px 20px rgba(15,30,45,0.04)}
+.contact-form label{display:flex;flex-direction:column;font-weight:600;color:var(--muted)}
+.contact-form input,.contact-form textarea{margin-top:8px;padding:10px;border:1px solid #e6eef6;border-radius:6px}
+.fixed-cta{position:fixed;right:20px;bottom:20px;background:var(--accent);color:#fff;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 10px 30px rgba(10,59,102,0.18)}
+.site-footer{padding:28px 0;text-align:center;color:var(--muted)}n
+
+/* Animations */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* Apply fade-in for sections when targeted (anchor navigation simula "scroll") */
+section:target .card, section:target .why-item, section:target .step, section:target .contact-form, section:target .hero-text{animation:fadeInUp 700ms ease forwards}
+
+/* initial reveal for some elements on load */
+.hero-text, .card, .why-item, .step, .contact-form{opacity:1}
+
+/* responsive */
+@media (max-width:900px){
+  .services-grid{grid-template-columns:1fr}
+  .why-list{grid-template-columns:1fr}
+  .contact-inner{grid-template-columns:1fr}
+  .main-nav{display:none}
+}
