@@ -4,97 +4,159 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>NodeLab Solutions</title>
+  <meta name="description" content="Optimización de procesos y automatización empresarial. Sistemas claros para reducir carga operativa y errores.">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">NodeLab Solutions</div>
-      <nav class="main-nav" aria-label="Navegación principal">
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Nuestros servicios</a>
-        <a href="#porque">Por qué elegirnos</a>
-        <a href="#implementacion">Implementación</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">NodeLab Solutions</a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Nuestros servicios</a>
+      <a href="#porque">Por qué elegirnos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="container hero-inner">
+      <h1 class="hero-text">
+        Optimizamos tus procesos para reducir trabajo manual, minimizar errores y mejorar la eficiencia de tu negocio.
+      </h1>
+      <p style="margin-bottom:36px;">
+        Diseñamos e implementamos sistemas que ordenan la operativa diaria y eliminan tareas repetitivas innecesarias.
+      </p>
+      <a class="btn primary large" href="#contacto">Solicita una demostración</a>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section id="inicio" class="hero">
-      <div class="container hero-inner">
-        <h1 class="hero-text">Optimizamos tus procesos para ahorrar tiempo, reducir errores y mejorar la eficiencia de tu negocio.</h1>
-        <a class="btn primary" href="#contacto">Solicita una demostración</a>
+  <!-- SERVICIOS -->
+  <section id="servicios" class="services">
+    <div class="container">
+      <h2 class="section-title">Nuestros servicios</h2>
+
+      <div class="services-grid">
+
+        <!-- Formación -->
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="40" height="40">
+              <path d="M3 6h7a3 3 0 0 1 3 3v11H6a3 3 0 0 0-3 3z"/>
+              <path d="M21 6h-7a3 3 0 0 0-3 3v11h7a3 3 0 0 1 3 3z"/>
+            </svg>
+          </div>
+          <h3>Formación personalizada</h3>
+          <p>Formación práctica para que tu equipo entienda, use y mantenga sus propios sistemas.</p>
+          <a class="link" href="formacion-personalizada.html">Ver servicio</a>
+        </article>
+
+        <!-- Soluciones -->
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="40" height="40">
+              <circle cx="12" cy="12" r="3.5"/>
+              <path d="M19.4 15a1.9 1.9 0 0 0 .45 1.95"/>
+              <path d="M4.6 9a1.9 1.9 0 0 0-.45-1.95"/>
+            </svg>
+          </div>
+          <h3>Soluciones preconfiguradas</h3>
+          <p>Sistemas ya desarrollados que resuelven problemas habituales de forma rápida y eficaz.</p>
+          <a class="link" href="soluciones-preconfiguradas.html">Ver servicio</a>
+        </article>
+
+        <!-- Implementación -->
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <!-- Llave inglesa -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="40" height="40" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 7a6 6 0 0 1-8 5.6L5.4 20.2a2 2 0 1 1-2.8-2.8l7.6-7.6A6 6 0 0 1 21 7z"/>
+            </svg>
+          </div>
+          <h3>Implementación integral y mantenimiento</h3>
+          <p>Nos encargamos de todo el proceso: análisis, desarrollo, integración y soporte continuo.</p>
+          <a class="link" href="implementacion-mantenimiento.html">Ver servicio</a>
+        </article>
+
+        <!-- Agentes -->
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <!-- Cabeza de robot -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="40" height="40">
+              <rect x="5" y="4" width="14" height="12" rx="2"/>
+              <circle cx="9" cy="10" r="1"/>
+              <circle cx="15" cy="10" r="1"/>
+              <path d="M12 2v2"/>
+            </svg>
+          </div>
+          <h3>Agentes autónomos</h3>
+          <p>Sistemas que ejecutan tareas de forma autónoma cuando aporta valor real.</p>
+          <a class="link" href="agentes-autonomos.html">Ver servicio</a>
+        </article>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="servicios" class="services">
-      <div class="container">
-        <h2 class="section-title">Nuestros Servicios</h2>
-        <div class="grid services-grid">
-          <article class="card">
-            <div class="icon" aria-hidden="true">
-              <!-- simple monocromo SVG -->
-              <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
-            </div>
-            <h3>Formación Personalizada</h3>
-            <p>Frase breve de resumen.</p>
-            <a class="link" href="formacion-personalizada.html">Ver servicio</a>
-          </article>
+  <!-- POR QUÉ -->
+  <section id="porque" class="why">
+    <div class="container">
+      <h2 class="section-title">Por qué elegir NodeLab Solutions</h2>
 
-          <article class="card">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40"><circle cx="12" cy="8" r="3"></circle><path d="M5 20c1-4 6-6 7-6s6 2 7 6"></path></svg>
-            </div>
-            <h3>Soluciones Preconfiguradas</h3>
-            <p>Frase breve de resumen.</p>
-            <a class="link" href="soluciones-preconfiguradas.html">Ver servicio</a>
-          </article>
+      <div class="why-list">
 
-          <article class="card">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M7 20h10"></path></svg>
-            </div>
-            <h3>Implementación Integral y Mantenimiento</h3>
-            <p>Frase breve de resumen.</p>
-            <a class="link" href="implementacion-mantenimiento.html">Ver servicio</a>
-          </article>
-
-          <article class="card">
-            <div class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40"><path d="M12 2v6"></path><path d="M12 16v6"></path><path d="M4 8h16"></path><path d="M4 18h16"></path></svg>
-            </div>
-            <h3>Agentes Autónomos</h3>
-            <p>Frase breve de resumen.</p>
-            <a class="link" href="agentes-autonomos.html">Ver servicio</a>
-          </article>
+        <div class="why-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M3 3h8v8H3zM13 13h8v8h-8z"/>
+            </svg>
+          </div>
+          <p>Un enfoque integral que reduce dependencia y riesgo operativo.</p>
         </div>
-      </div>
-    </section>
 
-    <section id="porque" class="why">
-      <div class="container">
-        <h2 class="section-title">Por qué elegir NodeLab Solutions</h2>
-        <div class="why-list">
-          <div class="why-item"><div class="icon"> <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg></div>
-            <p>Múltiples fuentes de valor, reduciendo riesgo y dependencia de un solo servicio</p>
+        <div class="why-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M12 3v18M5 10l7 7 7-7"/>
+            </svg>
           </div>
-          <div class="why-item"><div class="icon"> <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M5 12h14"></path></svg></div>
-            <p>Productos y servicios que generan ahorro y eficiencia inmediata</p>
-          </div>
-          <div class="why-item"><div class="icon"> <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M3 12h18v8H3z"></path></svg></div>
-            <p>Servicios a medida que refuerzan autoridad y confianza</p>
-          </div>
-          <div class="why-item"><div class="icon"> <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12 2l4 7h-8l4-7z"></path></svg></div>
-            <p>Agentes autónomos aportan ventaja competitiva real</p>
-          </div>
+          <p>Soluciones que generan ahorro y eficiencia desde el primer momento.</p>
         </div>
-      </div>
-    </section>
 
-    <section id="implementacion" class="implementation">
-      <div class="container">
-        <h2 class="section-title">Implementación</h2>
+        <div class="why-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M3 3h18v6H3zM3 15h18v6H3z"/>
+            </svg>
+          </div>
+          <p>Implementaciones alineadas con la forma real de trabajar de tu empresa.</p>
+        </div>
+
+        <div class="why-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <circle cx="12" cy="12" r="4"/>
+            </svg>
+          </div>
+          <p>Sistemas autónomos aplicados solo cuando aportan ventaja competitiva real.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPLEMENTACIÓN -->
+  <section id="implementacion" class="implementation">
+    <div class="container">
+      <h2 class="section-title">Implementación</h2>
+
+      <div class="implementation-row">
         <div class="timeline">
           <div class="step">Auditoría</div>
           <div class="arrow">→</div>
@@ -104,33 +166,66 @@
           <div class="arrow">→</div>
           <div class="step">Soporte</div>
         </div>
+
+       <div class="implementation-cta" style="margin-top:24px;">
+  <a class="btn" href="implementacion-mantenimiento.html">Ver proceso completo</a>
+</div>
+
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contacto" class="contact">
-      <div class="container contact-inner">
-        <h2 class="section-title">Contacto</h2>
-        <a class="btn large" href="#contacto">Contacta con nosotros</a>
-        <form class="contact-form" action="#" method="post">
-          <label>Nombre
-            <input type="text" name="nombre" required>
-          </label>
-          <label>Email
-            <input type="email" name="email" required>
-          </label>
-          <label>Mensaje
-            <textarea name="mensaje" rows="6" required></textarea>
-          </label>
-          <button class="btn primary">Contacta con nosotros</button>
-        </form>
-      </div>
-    </section>
-  </main>
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact">
+  <div class="container contact-inner">
+    <h2 class="section-title">Contacto</h2>
 
-  <a class="fixed-cta" href="#contacto">Contacta con nosotros</a>
+    <p>
+      Cuéntanos cómo trabajas hoy y qué problemas quieres eliminar.
+    </p>
 
-  <footer class="site-footer">
-    <div class="container">© NodeLab Solutions</div>
-  </footer>
+    <form class="contact-form"
+      action="https://formspree.io/f/mrezogva"
+      method="POST">
+
+  <label>
+    Nombre
+    <input type="text" name="nombre" required>
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" required>
+  </label>
+
+  <label>
+    Mensaje
+    <textarea name="mensaje" rows="6" required></textarea>
+  </label>
+
+  <!-- Anti-spam -->
+  <input type="text" name="_gotcha" style="display:none">
+
+
+
+
+      <button class="btn primary">Enviar consulta</button>
+    </form>
+  </div>
+</section>
+
+
+</main>
+
+<a class="fixed-cta" href="#contacto">Solicitar contacto</a>
+
+<footer class="site-footer">
+  <div class="container">
+    NodeLab Solutions · <a href="mailto:nodelabsolutions@gmail.com">nodelabsolutions@gmail.com</a>
+  </div>
+</footer>
+
 </body>
 </html>
+
